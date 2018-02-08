@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header sitename="Artemean Blog" description="Just another WordPress site" />
         <Main />
         <Footer />
       </div>
