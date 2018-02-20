@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="main-footer">
       <div className="site-info">
-        <a href="https://github.com/inliner/">Proudly powered by inliner</a>
+        <a href="https://github.com/artemean/">Proudly powered by artemean</a>
       </div>
     </footer>
   );
