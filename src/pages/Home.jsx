@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import PostList from "../components/PostList/PostList";
-import PostsPlaceholder from "../components/PostList/PostsPlaceholder";
+import ExcerptList from "../components/ExcerptList/ExcerptList";
+import PostsPlaceholder from "../components/ExcerptList/ExcerptsPlaceholder";
 
 export default class Home extends Component {
   state = {
@@ -21,8 +21,9 @@ export default class Home extends Component {
   }
 
   render() {
+    console.log(this.props);
     const MainBlock = this.state.posts.length ? (
-      <PostList posts={this.state.posts} />
+      <ExcerptList posts={this.state.posts} />
     ) : (
       <PostsPlaceholder />
     );
