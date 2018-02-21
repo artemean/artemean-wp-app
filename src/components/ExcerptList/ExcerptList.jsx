@@ -2,7 +2,6 @@ import React from "react";
 import Excerpt from "../Excerpt/Excerpt";
 
 function ExcerptList({ posts }) {
-  console.log(posts);
   const renderPosts = posts.map(el => (
     <Excerpt
       key={el.id}

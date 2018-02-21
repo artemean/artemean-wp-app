@@ -21,7 +21,6 @@ export default class Home extends Component {
   }
 
   render() {
-    console.log(this.props);
     const MainBlock = this.state.posts.length ? (
       <ExcerptList posts={this.state.posts} />
     ) : (

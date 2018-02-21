@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Post from "./pages/Post";
+import PostPage from "./pages/PostPage";
 import "./App.css";
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Route exact path="/" component={Home} />
-          <Route path="/post/:postId" component={Post} />
+          <Route path="/post/:postId" component={PostPage} />
         </div>
       </Router>
     );
